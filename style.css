@@ -93,7 +93,7 @@ a:hover {
 }
 
 .horizontal-line {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     height: 1px;
     background-color: white;
@@ -150,7 +150,7 @@ main>div {
 }
 
 .menu-item-list h2,
-.menu-item-list-vertical h2{
+.menu-item-list-vertical h2 {
     margin-bottom: 6px;
 }
 
@@ -217,4 +217,39 @@ main>div {
 
 .menu-item-list-vertical .menu-item:hover {
     background-color: #977bf44f;
+}
+
+
+@media screen and (max-width: 700px) {
+    .nav-sidebar {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .top-bar {
+        position: static;
+        left: 0;
+        width: 100%;
+    }
+
+    main {
+        left: 0;
+    }
+
+    .menu-item-list .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-list .menu-item {
+        width: 100%;
+    }
+
+    .menu-vertical-group,
+    .menu-item-list .row {
+        flex-wrap: wrap;
+    }
 }
