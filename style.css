@@ -14,6 +14,8 @@ html {
 
 body {
     width: 100%;
+    color: white;
+    background-color: #272626;
 }
 
 body,
@@ -139,17 +141,57 @@ main>div {
     height: 100%;
 }
 
+/* menu horizontal */
+
 .menu-item-list .row {
     display: flex;
     justify-content: space-between;
     gap: 1em;
 }
 
+.menu-item-list h2,
+.menu-item-list-vertical h2{
+    margin-bottom: 6px;
+}
+
+.menu-item {
+    cursor: pointer;
+    transition: 500ms;
+}
+
 .menu-item-list .menu-item {
     height: 200px;
+    border-radius: 6px;
     width: 25%;
-    background-color: #27262627;
+    background-color: #ffffff27;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item-list .menu-item .menu-item-metadata {
+    align-self: flex-start;
+}
+
+.menu-item-list .menu-item-img {
+    border-radius: 6px;
+    width: 100%;
+    height: 80%;
+    background-color: #272626;
+}
+
+/* menu vertical */
+
+.menu-vertical-group {
+    display: flex;
+    margin-top: 32px;
+    gap: 1em;
+}
+
+
+.menu-vertical-group>div {
+    flex: 1;
 }
 
 .menu-item-list-vertical .row {
@@ -161,17 +203,18 @@ main>div {
     width: 100%;
     background-color: #27262627;
     min-height: 60px;
-    border-bottom: 1px solid #272626;
-}
-
-
-.menu-vertical-group {
+    border-bottom: 1px solid #ffffff41;
+    padding: 6px 16px;
     display: flex;
-    margin-top: 32px;
     gap: 1em;
 }
 
+.menu-item-list-vertical .menu-item-img {
+    height: 42px;
+    width: 42px;
+    background-color: black;
+}
 
-.menu-vertical-group>div {
-    flex: 1;
+.menu-item-list-vertical .menu-item:hover {
+    background-color: #977bf44f;
 }
