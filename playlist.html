@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="playlist.css" />
+    <title>HTML project fp | Playlist Page</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HTML project fp</title>
-</head>
-
-<body>
+  <body>
     <aside class="nav-sidebar">
-        <div class="container">
-
-            <div class="aside-action-group">
-                <h1>_mp<span style="color: #977bf4f7;">333</span></h1>
-                <span>settings icon</span>
-            </div>
-
-            <nav class="nav-links">
-                <div class="nav-link-group">
-                    <a href="/index.html">Home</a>
-                    <a href="/index.html">Search</a>
-                    <a href="/playlist.html">My Library</a>
-                </div>
-
-                <span class="horizontal-line"></span>
-
-                <div class="nav-link-group">
-
-                    <a href="/playlist.html">Create Playlist</a>
-                    <a href="/index.html">Liked Songs</a>
-                    <a href="/index.html">Add Local Files</a>
-
-                </div>
-                <span class="horizontal-line"></span>
-
-                <div class="nav-link-group">
-                    <a href="/playlist.html">Night Drive</a>
-                    <a href="/playlist.html">Workout</a>
-                    <a href="/playlist.html">Studying</a>
-                    <a href="/playlist.html">Super Playlist</a>
-                </div>
-            </nav>
+      <div class="container">
+        <div class="aside-action-group">
+          <h1>_mp<span style="color: #977bf4f7">333</span></h1>
+          <span>settings icon</span>
         </div>
+
+        <nav class="nav-links">
+          <div class="nav-link-group">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Search</a>
+            <a href="/playlist.html">My Library</a>
+          </div>
+
+          <span class="horizontal-line"></span>
+
+          <div class="nav-link-group">
+            <a href="/playlist.html">Create Playlist</a>
+            <a href="/index.html">Liked Songs</a>
+            <a href="/index.html">Add Local Files</a>
+          </div>
+          <span class="horizontal-line"></span>
+
+          <div class="nav-link-group">
+            <a href="/playlist.html">Night Drive</a>
+            <a href="/playlist.html">Workout</a>
+            <a href="/playlist.html">Studying</a>
+            <a href="/playlist.html">Super Playlist</a>
+          </div>
+        </nav>
+      </div>
     </aside>
 
     <div class="top-bar">
-        <div class="top-bar-search-bar">
-            <input type="text" placeholder="Search songs...">
-        </div>
+      <div class="top-bar-search-bar">
+        <input type="text" placeholder="Search songs..." />
+      </div>
 
-        <div class="account-options">account chevron</div>
+      <div class="account-options">account chevron</div>
     </div>
 
     <main>
@@ -69,4 +66,30 @@
     </main>
 </body>
 
+          <div class="playlist-header-metadata">
+            <h1>Playlist Title</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae, quidem. Quam fugiat dolor nobis hic cupiditate, ab
+              voluptatibus doloremque atque quidem quaerat, neque tempore
+              numquam ea nisi distinctio officiis dignissimos.
+            </p>
+            <p>song count</p>
+          </div>
+        </section>
+
+        <section class="playlist-body">
+          <div class="playlist-controls">buttons searchbar</div>
+
+          <div class="playlist-list">
+            <div class="playlist-item">
+              <div class="playlist-item-thumbnail">thumbnail</div>
+              <h3>name</h3>
+              <p>author</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
