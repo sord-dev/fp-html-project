@@ -162,7 +162,6 @@ main > div {
 }
 
 .menu-item-list .menu-item {
-  height: 200px;
   border-radius: 6px;
   width: 20%;
   background-color: #ffffff27;
@@ -173,14 +172,27 @@ main > div {
 }
 
 .menu-item-list .menu-item-img {
-  border-radius: 6px;
   width: 100%;
   height: 80%;
   background-color: #272626;
+  margin-bottom: 10px;
+}
+
+.menu-item-list .menu-item-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
 }
 
 .menu-item-list .menu-item .menu-item-metadata {
   align-self: flex-start;
+  font-size: .8em;
+  text-transform: capitalize;
+}
+
+.menu-item-list .menu-item .menu-item-metadata p {
+  opacity: .8;
 }
 
 .menu-item-list h2,
